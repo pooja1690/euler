@@ -241,3 +241,27 @@ func searchBinary(key: Int, imin: Int, imax: Int) {
     
 }
 
+let rr = [4,5,6,7,22,23,445]
+
+let closuretest = rr.sorted(by: >)
+
+func yy() -> Int{
+    return 5
+}
+func xx() -> () -> Int {
+    return yy
+}
+
+
+func xyx(completionHandler: (String) -> Void) {
+    
+    return completionHandler("5")
+}
+
+xyx() { data in
+    print("yo")
+}
+
+
+
+
